@@ -1,348 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('images/bg.png');
-            background-size: cover;
-            background-position: 10% top;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        .navbar{
-            min-width: 50%;
-            top: 0;
-            position: fixed;
-            z-index: 1000;
-        }
-        .cth{
-            position: inherit;
-            padding-top: 7rem;
-        }
-        @media (max-width: 767px) {
-            body {
-                background-position: center top;
-            }
-        }
-    </style>
-     <style>
-      .button-container {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 10px;
-          text-align: center;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="C:/xampp/htdocs/website_teknisi/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('C:/xampp/htdocs/website_teknisi/images/bg.png');
+      background-size: cover;
+      background-position: 10% top;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .navbar {
+        position: auto;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        /* tambahkan properti lain sesuai kebutuhan di handphone */
       }
-  
-      .btn {
-          width: 50%;
-          position: relative;
+    }
+
+    /* Untuk tampilan PC atau layar lebih besar dari 767px */
+    @media only screen and (min-width: 768px) {
+      .navbar {
+        position: fixed;
+        top: 0;
+        min-width: 100%;
+        z-index: 1000;
+        /* tambahkan properti lain sesuai kebutuhan di PC */
       }
-      .btn::before {
-          content: attr(data-number);
-          position: absolute;
-          top: 50%;
-          left: -100px;
-          transform: translateY(-50%);
-          color: #fff;
-          border: 3px solid #fff;
-          padding: 3px 10px;
+    }
+
+    .cth {
+      position: inherit;
+      padding-top: 7rem;
+    }
+
+    @media (max-width: 767px) {
+      body {
+        background-position: center top;
       }
+    }
+  </style>
+  <style>
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+
+    .btn {
+      width: 50%;
+      position: relative;
+    }
+
+    .btn::before {
+      content: attr(data-number);
+      position: absolute;
+      top: 50%;
+      left: -100px;
+      transform: translateY(-50%);
+      color: #fff;
+      border: 3px solid #fff;
+      padding: 3px 10px;
+    }
   </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <div class="container text-center">
-            <img src="images/logo.jpg" alt="Logo" style="width: 50px; height: auto;">
-            <h1 class="navbar-brand mb-0 h1">Website Ceklis Teknisi UPDL Padang</h1>
-            <marquee behavior="scroll" direction="left" class="text-white">
-              <img src="images/logo 2.png" alt="Logo" style="width: 50px; height: auto;">
-                Utamakan Keselamatan Dan Kesehatan Kerja
-            </marquee>
-        </div>
-    </nav>
-    <div class="container mt-2 text-center cth">
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink1" data-number="01">RUANG GENSET</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink1" data-number="02">KANTOR PMK</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink2" data-number="03">KANTOR PAK</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink3" data-number="04">RUANG STUDIO</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink4" data-number="05">RUANG RAPAT</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink5" data-number="06">KERINCI 214</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink6" data-number="07">KERINCI 213</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink7" data-number="08">KERINCI 212</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink8" data-number="09">KERINCI 211</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink9" data-number="10">KERINCI 210</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink10" data-number="11">KERINCI 209</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink11" data-number="12">KERINCI 208</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink12" data-number="13">KERINCI 207</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink13" data-number="14">KERINCI 206</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink14" data-number="15">KERINCI 205</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink15" data-number="16">KERINCI 204</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink16" data-number="17">KERINCI 203</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink17" data-number="18">KERINCI 202</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink18" data-number="19">KERINCI 201</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink19" data-number="20">KERINCI 116</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink20" data-number="21">KERINCI 115</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink21" data-number="22">KERINCI 114</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink22" data-number="23">KERINCI 113</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink23" data-number="24">KERINCI 112</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink24" data-number="25">KERINCI 111</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="26">KERINCI 110</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="27">KERINCI 109</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="28">KERINCI 108</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="29">KERINCI 107</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="30">KERINCI 106</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="31">KERINCI 105</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="32">KERINCI 104</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="33">KERINCI 103</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="34">KERINCI 102</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="35">KERINCI 101</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink26" data-number="36">MERAPI 210</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink27" data-number="37">MERAPI 209</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink28" data-number="38">MERAPI 208</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink29" data-number="39">MERAPI 207</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink31" data-number="40">MERAPI 206</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink32" data-number="41">MERAPI 205</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink33" data-number="42">MERAPI 204</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink34" data-number="43">MERAPI 203</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink35" data-number="44">MERAPI 202</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink36" data-number="45">MERAPI 201</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink37" data-number="46">MERAPI 107</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink38" data-number="47">MERAPI 106</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink39" data-number="48">MERAPI 105</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink40" data-number="49">MERAPI 104</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink41" data-number="50">MERAPI 103</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink42" data-number="51">MERAPI 102</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink43" data-number="52">MERAPI 101</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="53">RUANG MANAJER</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="53">RUANG RAPAT</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="54">BUYA HAMKA</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="55">KANTIN</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="56">LAB DISTRIBUSI</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="57">RASUNA SAID</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">MOH HATTA</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2.1</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2.2</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2.3</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3.1</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3.2</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3.3</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4.1</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4.2</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4.3</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5.1</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5.2</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5.3</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6.1</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6.2</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6.3</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.1</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.2</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.3</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.4</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.5</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.1</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.2</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.3</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.4</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.5</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9.1</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9.2</a>
-        <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9.3</a>
-    </div>
-    <script>
-        document.getElementById("myLink1").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/5c6VuRdpZPmt1jR4A";
-          
-        });
-      </script>
-      <script>
-        document.getElementById("myLink2").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/5w94gBTF2UJwVaaq9";
-          
-        });
-      </script>
-      <script>
-        document.getElementById("myLink3").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/16K2ihfoTH2LDm6L8";
-          
-        });
-      </script>
-      <script>
-        document.getElementById("myLink4").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/fPkArypRpAdBU8LTA";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink5").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/soo9nLfDBP6SRpke9";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink6").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/ocydwgXoyXhFgUpM7";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink7").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/TWxFDcNbDfCi77Yd9";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink8").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/nqsfXrGFEaLooZot5";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink9").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/ox4PUEjp1yBxHNzPA";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink10").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/ejuxisvxsw7yPatr5";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink11").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/zS1QtuKrN9RzzdS29";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink12").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/2NaPafvm8LvNnr3E8";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink13").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "https://forms.gle/XMWmR1SRKALnQ1Bt7";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink14").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink14").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink15").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink16").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink17").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink18").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink19").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink20").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink21").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink22").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink23").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink24").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-      <script>
-        document.getElementById("myLink25").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "";
-          
-        });
-      </script>                
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container text-center">
+      <img src="C:/xampp/htdocs/website_teknisi/images/logo.jpg" alt="Logo" style="width: 30px; height: auto;">
+      <h1 class="navbar-brand mb-0 h1">Website Ceklis Teknisi UPDL Padang</h1>
+      <marquee behavior="scroll" direction="left" class="text-white">
+        <img src="C:/xampp/htdocs/website_teknisi/images/logo 2.png" alt="Logo" style="width: 30px; height: auto;">
+        Utamakan Keselamatan Dan Kesehatan Kerja
+      </marquee>
+    </div>
+  </nav>
+  <div class="container mt-2 text-center cth">
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink1" data-number="01">RUANG GENSET</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink1" data-number="02">KANTOR PMK</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink2" data-number="03">KANTOR PAK</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink3" data-number="04">RUANG STUDIO</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink4" data-number="05">RUANG RAPAT</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink5" data-number="06">KERINCI 214</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink6" data-number="07">KERINCI 213</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink7" data-number="08">KERINCI 212</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink8" data-number="09">KERINCI 211</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink9" data-number="10">KERINCI 210</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink10" data-number="11">KERINCI 209</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink11" data-number="12">KERINCI 208</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink12" data-number="13">KERINCI 207</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink13" data-number="14">KERINCI 206</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink14" data-number="15">KERINCI 205</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink15" data-number="16">KERINCI 204</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink16" data-number="17">KERINCI 203</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink17" data-number="18">KERINCI 202</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink18" data-number="19">KERINCI 201</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink19" data-number="20">KERINCI 116</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink20" data-number="21">KERINCI 115</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink21" data-number="22">KERINCI 114</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink22" data-number="23">KERINCI 113</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink23" data-number="24">KERINCI 112</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink24" data-number="25">KERINCI 111</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="26">KERINCI 110</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="27">KERINCI 109</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="28">KERINCI 108</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="29">KERINCI 107</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="30">KERINCI 106</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="31">KERINCI 105</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="32">KERINCI 104</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="33">KERINCI 103</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="34">KERINCI 102</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="35">KERINCI 101</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink26" data-number="36">MERAPI 210</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink27" data-number="37">MERAPI 209</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink28" data-number="38">MERAPI 208</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink29" data-number="39">MERAPI 207</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink31" data-number="40">MERAPI 206</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink32" data-number="41">MERAPI 205</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink33" data-number="42">MERAPI 204</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink34" data-number="43">MERAPI 203</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink35" data-number="44">MERAPI 202</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink36" data-number="45">MERAPI 201</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink37" data-number="46">MERAPI 107</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink38" data-number="47">MERAPI 106</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink39" data-number="48">MERAPI 105</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink40" data-number="49">MERAPI 104</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink41" data-number="50">MERAPI 103</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink42" data-number="51">MERAPI 102</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink43" data-number="52">MERAPI 101</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="53">RUANG MANAJER</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="53">RUANG RAPAT</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="54">BUYA HAMKA</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="55">KANTIN</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="56">LAB DISTRIBUSI</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="57">RASUNA SAID</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">MOH HATTA</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.4</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.5</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.4</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.5</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9.3</a>
+  </div>
+  <script>
+    document.getElementById("myLink1").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/5c6VuRdpZPmt1jR4A";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink2").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/5w94gBTF2UJwVaaq9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink3").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/16K2ihfoTH2LDm6L8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink4").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/fPkArypRpAdBU8LTA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink5").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/soo9nLfDBP6SRpke9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink6").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/ocydwgXoyXhFgUpM7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink7").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/TWxFDcNbDfCi77Yd9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink8").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/nqsfXrGFEaLooZot5";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink9").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/ox4PUEjp1yBxHNzPA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink10").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/ejuxisvxsw7yPatr5";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink11").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/zS1QtuKrN9RzzdS29";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink12").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/2NaPafvm8LvNnr3E8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink13").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/XMWmR1SRKALnQ1Bt7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink14").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink14").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink15").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink16").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink17").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink18").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink19").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink20").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink21").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink22").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink23").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink24").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink25").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script src="C:/xampp/htdocs/website_teknisi/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
