@@ -9,15 +9,16 @@
     body {
       background-image: url('images/bg.png');
       background-size: cover;
-      background-position: 10% top;
+      background-position: auto;
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
 
     @media only screen and (max-width: 767px) {
       .navbar {
-        position: auto;
-        top: 0;
+        position: fixed;
+        display: flex;
+        top: 0%;
         width: 100%;
         z-index: 1000;
         /* tambahkan properti lain sesuai kebutuhan di handphone */
@@ -37,7 +38,7 @@
 
     .cth {
       position: inherit;
-      padding-top: 7rem;
+      padding-top: 8rem;
     }
 
     @media (max-width: 767px) {
@@ -63,7 +64,7 @@
       content: attr(data-number);
       position: absolute;
       top: 50%;
-      left: -100px;
+      left: -80px;
       transform: translateY(-50%);
       color: #fff;
       border: 3px solid #fff;
