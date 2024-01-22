@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="C:/xampp/htdocs/website_teknisi/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-image: url('images/bg.png');
+      background-image: url('C:/xampp/htdocs/website_teknisi/images/bg.png');
       background-size: cover;
       background-position: auto;
       background-repeat: no-repeat;
@@ -32,7 +32,27 @@
         top: 0;
         min-width: 100%;
         z-index: 1000;
+
         /* tambahkan properti lain sesuai kebutuhan di PC */
+        .search-form {
+          display: flex;
+          align-items: center;
+        }
+
+        .search-form input {
+          padding: 5px;
+          margin-right: 5px;
+        }
+
+        .search-form button {
+          padding: 5px 10px;
+          background-color: #007bff;
+          /* Warna latar belakang sesuai kebutuhan */
+          color: #fff;
+          /* Warna teks sesuai kebutuhan */
+          border: none;
+          cursor: pointer;
+        }
       }
     }
 
@@ -67,6 +87,8 @@
       left: -80px;
       transform: translateY(-50%);
       color: #fff;
+      border: 3px solid #fff;
+      padding: 3px 10px;
     }
   </style>
 </head>
@@ -74,294 +96,802 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-danger">
     <div class="container text-center">
-      <img src="images/logo.jpg" alt="Logo" style="width: 30px; height: auto;">
+      <img src="C:/xampp/htdocs/website_teknisi/images/logo.jpg" alt="Logo" style="width: 30px; height: auto;">
       <h1 class="navbar-brand mb-0 h1">Website Ceklis Teknisi UPDL Padang</h1>
       <marquee behavior="scroll" direction="left" class="text-white">
-        <img src="images/logo 2.png" alt="Logo" style="width: 30px; height: auto;">
+        <img src="C:/xampp/htdocs/website_teknisi/images/logo 2.png" alt="Logo" style="width: 30px; height: auto;">
         Utamakan Keselamatan Dan Kesehatan Kerja
       </marquee>
     </div>
   </nav>
   <div class="container mt-2 text-center cth">
     <a class="btn btn-outline-light mb-2" href="#about" id="myLink1" data-number="01">RUANG GENSET</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink1" data-number="02">KANTOR PMK</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink2" data-number="03">KANTOR PAK</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink3" data-number="04">RUANG STUDIO</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink4" data-number="05">RUANG RAPAT</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink5" data-number="06">KERINCI 214</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink6" data-number="07">KERINCI 213</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink7" data-number="08">KERINCI 212</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink8" data-number="09">KERINCI 211</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink9" data-number="10">KERINCI 210</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink10" data-number="11">KERINCI 209</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink11" data-number="12">KERINCI 208</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink12" data-number="13">KERINCI 207</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink13" data-number="14">KERINCI 206</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink14" data-number="15">KERINCI 205</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink15" data-number="16">KERINCI 204</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink16" data-number="17">KERINCI 203</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink17" data-number="18">KERINCI 202</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink18" data-number="19">KERINCI 201</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink19" data-number="20">KERINCI 116</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink20" data-number="21">KERINCI 115</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink21" data-number="22">KERINCI 114</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink22" data-number="23">KERINCI 113</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink23" data-number="24">KERINCI 112</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink24" data-number="25">KERINCI 111</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="26">KERINCI 110</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="27">KERINCI 109</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="28">KERINCI 108</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="29">KERINCI 107</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="30">KERINCI 106</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="31">KERINCI 105</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="32">KERINCI 104</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="33">KERINCI 103</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="34">KERINCI 102</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="35">KERINCI 101</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink26" data-number="36">MERAPI 210</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink27" data-number="37">MERAPI 209</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink28" data-number="38">MERAPI 208</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink29" data-number="39">MERAPI 207</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink31" data-number="40">MERAPI 206</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink32" data-number="41">MERAPI 205</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink33" data-number="42">MERAPI 204</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink34" data-number="43">MERAPI 203</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink35" data-number="44">MERAPI 202</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink36" data-number="45">MERAPI 201</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink37" data-number="46">MERAPI 107</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink38" data-number="47">MERAPI 106</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink39" data-number="48">MERAPI 105</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink40" data-number="49">MERAPI 104</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink41" data-number="50">MERAPI 103</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink42" data-number="51">MERAPI 102</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink43" data-number="52">MERAPI 101</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="53">RUANG MANAJER</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="53">RUANG RAPAT</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="54">BUYA HAMKA</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="55">KANTIN</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="56">LAB DISTRIBUSI</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="57">RASUNA SAID</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">MOH HATTA</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2.1</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2.2</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 2.3</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3.1</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3.2</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 3.3</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4.1</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4.2</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 4.3</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5.1</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5.2</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 5.3</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6.1</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6.2</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 6.3</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.1</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.2</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.3</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.4</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 7.5</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.1</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.2</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.3</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.4</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 8.5</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9.1</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9.2</a>
-    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="58">UP 9.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink2" data-number="02">KANTOR PMK</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink3" data-number="03">KANTOR PAK</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink4" data-number="04">RUANG STUDIO</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink5" data-number="05">RUANG RAPAT</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink6" data-number="06">KERINCI 214</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink7" data-number="07">KERINCI 213</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink8" data-number="08">KERINCI 212</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink9" data-number="09">KERINCI 211</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink10" data-number="10">KERINCI 210</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink11" data-number="11">KERINCI 209</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink12" data-number="12">KERINCI 208</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink13" data-number="13">KERINCI 207</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink14" data-number="14">KERINCI 206</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink15" data-number="15">KERINCI 205</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink16" data-number="16">KERINCI 204</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink17" data-number="17">KERINCI 203</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink18" data-number="18">KERINCI 202</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink19" data-number="19">KERINCI 201</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink20" data-number="20">KERINCI 116</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink21" data-number="21">KERINCI 115</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink22" data-number="22">KERINCI 114</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink23" data-number="23">KERINCI 113</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink24" data-number="24">KERINCI 112</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink25" data-number="25">KERINCI 111</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink26" data-number="26">KERINCI 110</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink27" data-number="27">KERINCI 109</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink28" data-number="28">KERINCI 108</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink29" data-number="29">KERINCI 107</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink30" data-number="30">KERINCI 106</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink31" data-number="31">KERINCI 105</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink32" data-number="32">KERINCI 104</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink33" data-number="33">KERINCI 103</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink34" data-number="34">KERINCI 102</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink35" data-number="35">KERINCI 101</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink36" data-number="36">MERAPI 210</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink37" data-number="37">MERAPI 209</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink38" data-number="38">MERAPI 208</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink39" data-number="39">MERAPI 207</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink40" data-number="40">MERAPI 206</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink41" data-number="41">MERAPI 205</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink42" data-number="42">MERAPI 204</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink43" data-number="43">MERAPI 203</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink44" data-number="44">MERAPI 202</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink45" data-number="45">MERAPI 201</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink46" data-number="46">MERAPI 107</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink47" data-number="47">MERAPI 106</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink48" data-number="48">MERAPI 105</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink49" data-number="49">MERAPI 104</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink50" data-number="50">MERAPI 103</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink51" data-number="51">MERAPI 102</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink52" data-number="52">MERAPI 101</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink53" data-number="53">RUANG MANAJER</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink54" data-number="54">RUANG RAPAT</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink55" data-number="55">BUYA HAMKA</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink56" data-number="56">KANTIN</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink57" data-number="57">LAB DISTRIBUSI</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink58" data-number="58">RASUNA SAID</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink59" data-number="59">MOH HATTA</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink60" data-number="60">COLENCO</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink61" data-number="61">KELAS SUTAN SYAHRIR</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink62" data-number="62">AHMAD DAHLAN</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink63" data-number="63">UP 2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink64" data-number="64">UP 2.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink65" data-number="65">UP 2.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink66" data-number="66">UP 2.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink67" data-number="67">UP 3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink68" data-number="68">UP 3.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink69" data-number="69">UP 3.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink70" data-number="70">UP 3.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink71" data-number="71">UP 4</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink72" data-number="72">UP 4.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink73" data-number="73">UP 4.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink74" data-number="74">UP 4.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink75" data-number="75">UP 5</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink76" data-number="76">UP 5.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink77" data-number="58">UP 5.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink78" data-number="58">UP 5.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink79" data-number="58">UP 6</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink80" data-number="58">UP 6.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink81" data-number="58">UP 6.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink82" data-number="58">UP 6.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink83" data-number="58">UP 7</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink84" data-number="58">UP 7.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink85" data-number="58">UP 7.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink86" data-number="58">UP 7.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink87" data-number="58">UP 7.4</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink88" data-number="58">UP 7.5</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink89" data-number="58">UP 8</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink90" data-number="58">UP 8.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink91" data-number="58">UP 8.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink92" data-number="58">UP 8.3</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink93" data-number="58">UP 8.4</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink94" data-number="58">UP 8.5</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink95" data-number="58">UP 9</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink96" data-number="58">UP 9.1</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink97" data-number="58">UP 9.2</a>
+    <a class="btn btn-outline-light mb-2" href="#about" id="myLink98" data-number="58">UP 9.3</a>
+
   </div>
   <script>
     document.getElementById("myLink1").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/5c6VuRdpZPmt1jR4A";
+      window.location.href = "https://forms.gle/SohbkbpwMbCxhU2CA";
 
     });
   </script>
   <script>
     document.getElementById("myLink2").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/5w94gBTF2UJwVaaq9";
+      window.location.href = "https://forms.gle/PeAnhDbXMTZmMZRx9";
 
     });
   </script>
   <script>
     document.getElementById("myLink3").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/16K2ihfoTH2LDm6L8";
+      window.location.href = "https://forms.gle/VkFfjwRioHedPvpq5";
 
     });
   </script>
   <script>
     document.getElementById("myLink4").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/fPkArypRpAdBU8LTA";
+      window.location.href = "https://forms.gle/QPEKjjYtr3QwizQt9";
 
     });
   </script>
   <script>
     document.getElementById("myLink5").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/soo9nLfDBP6SRpke9";
+      window.location.href = "https://forms.gle/nGrRD3xsJWofXc3W6";
 
     });
   </script>
   <script>
     document.getElementById("myLink6").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/ocydwgXoyXhFgUpM7";
+      window.location.href = "https://forms.gle/YuicRj4vDkZNVx6g6";
 
     });
   </script>
   <script>
     document.getElementById("myLink7").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/TWxFDcNbDfCi77Yd9";
+      window.location.href = "https://forms.gle/wXmSBfZmuvLs1VRU9";
 
     });
   </script>
   <script>
     document.getElementById("myLink8").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/nqsfXrGFEaLooZot5";
+      window.location.href = "https://forms.gle/u2jxtaCuT6bBcs816";
 
     });
   </script>
   <script>
     document.getElementById("myLink9").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/ox4PUEjp1yBxHNzPA";
+      window.location.href = "https://forms.gle/WdrQbnoNVePUCYiC7";
 
     });
   </script>
   <script>
     document.getElementById("myLink10").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/ejuxisvxsw7yPatr5";
+      window.location.href = "https://forms.gle/USzMJ8yEDZdK1MFRA";
 
     });
   </script>
   <script>
     document.getElementById("myLink11").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/zS1QtuKrN9RzzdS29";
+      window.location.href = "https://forms.gle/rDTEC7hPwdDmhuGb8";
 
     });
   </script>
   <script>
     document.getElementById("myLink12").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/2NaPafvm8LvNnr3E8";
+      window.location.href = "https://forms.gle/arHNCLbWH3hjnEm7A";
 
     });
   </script>
   <script>
     document.getElementById("myLink13").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "https://forms.gle/XMWmR1SRKALnQ1Bt7";
+      window.location.href = "https://forms.gle/j3DkFyEVo2xpUkGA9";
 
     });
   </script>
   <script>
     document.getElementById("myLink14").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
-
-    });
-  </script>
-  <script>
-    document.getElementById("myLink14").addEventListener("click", function (event) {
-      event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/CAyB8RZeTjt6q19S7";
 
     });
   </script>
   <script>
     document.getElementById("myLink15").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/YqCrnCq7RGqU1VY2A";
 
     });
   </script>
   <script>
     document.getElementById("myLink16").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/ELkW8SZN6kzTtKgD6";
 
     });
   </script>
   <script>
     document.getElementById("myLink17").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/GKwmVEPuXuFxLWkr9";
 
     });
   </script>
   <script>
     document.getElementById("myLink18").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/tT6r7BkizkdRXXjq6";
 
     });
   </script>
   <script>
     document.getElementById("myLink19").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/ZAzcDbgtaR1bJV3H6";
 
     });
   </script>
   <script>
     document.getElementById("myLink20").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/8mSNmfhm3uX6tyHPA";
 
     });
   </script>
   <script>
     document.getElementById("myLink21").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/cj87znJhxbb6sJQG9";
 
     });
   </script>
   <script>
     document.getElementById("myLink22").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/Lt2HhEj7BFUpnWYd6";
 
     });
   </script>
   <script>
     document.getElementById("myLink23").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/nL4cjryL38ryZxoL9";
 
     });
   </script>
   <script>
     document.getElementById("myLink24").addEventListener("click", function (event) {
       event.preventDefault();
-      window.location.href = "";
+      window.location.href = "https://forms.gle/oN1bx8xypYnvSD6WA";
 
     });
   </script>
   <script>
     document.getElementById("myLink25").addEventListener("click", function (event) {
       event.preventDefault();
+      window.location.href = "https://forms.gle/5coEzSxkBD3nRVy48";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink26").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/VdVbcZQ8bK2NmPEKA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink27").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/uq3z4dZ8HkA8gPCZ6";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink28").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/emWWrkAvuTEdqH2UA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink29").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/LWXzAL3HbawFfctGA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink30").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/vxo8naU2mPkkoxxU7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink31").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/krwkw4dwiLXCDWb59";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink32").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/NrC1fMckdwfzbBqG9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink33").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/6jnrBPX57Q3vsu878";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink34").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/NCgTxoErH7gCCmwy6";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink35").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/CLTtjDjwcwEMQjK78";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink36").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/VaVdxijnvRWAVH5DA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink37").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/TdPf4miSsKhQZghV9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink38").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/dqSggjbH3pW5Xshn9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink39").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/ioBP6eD53vynDiAR8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink40").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/9GguH36e5QFGxWDA9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink41").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/A5azpeMmXRgxFA9Q8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink42").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/WEYed39qvuwjuBTM7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink43").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/hhFqzYcKco1ivMSZ8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink44").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/4N2a6sZP4wWUX7PGA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink45").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/EDomQBiqfPizetEi9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink46").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/KMvBXMGVjTBSAJj16";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink47").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/9sx95CocxWDdonoVA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink48").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/yYrPm6NeDRKHjAdXA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink49").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/jJJqTH2oPoXTpRta7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink50").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/osKpqsq41Ry9tpdr9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink51").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/xccG2Q6Qcdbv38cPA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink52").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/N7kKGKcVKAWVVjnE7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink53").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/4qvmdy8KBLpPqGqQ6";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink54").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/JKQ5mqQ2LPajQdAR8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink55").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/G8r63nxL3C3Rh4pz5";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink56").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/3NFBJFikGeqeZMtZ8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink57").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/556eMLA5prjg2aQ7A";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink58").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/CqhBbFfEeMtJMSeKA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink59").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/nMH3SxGT4HpsNKEr5";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink60").addEventListener("click", function (event) {
+      event.preventDefault();
       window.location.href = "";
 
     });
   </script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("myLink61").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/sBevkEuUoTepB9t39";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink62").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink63").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/zj1jgMqGboDKVJv78";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink64").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/9aYayWkA2LyPj5Sy5";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink65").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/iKKD9gGViQZcU4Bt9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink66").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/NmTBxoUzJGXGpNFw6";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink67").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/3EZrHmeVou7d58Xg8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink68").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/YV516Q6HjZm3pgRbA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink69").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/LdyL69DhHTDoeU1BA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink70").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/Xhj26ZpC5kVfNyEa7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink71").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/vbTFQy5CNzDYHzoj8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink72").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/dc3sPSn58cH9WMUWA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink73").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/qEGg3yhqPhWvT44HA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink74").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/mJyoxnJ9sfQBreR48";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink75").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/CFWcMjsKbbfqJ8q57";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink76").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/Hp4ste1wPKF1Cwns9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink77").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/eq1fSM6nYVYE5N4V7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink78").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/nijhzq7EmrQNkdzV8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink79").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/yGZR7277NFdVUusG7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink80").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/ivRjMxUgySQqJj4HA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink81").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/xyWWhHmrCWV61V4P9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink82").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/ummawMreSHU1NJYo7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink83").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/PJm3obkXJTtYseTx9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink84").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/UXBzCcCc8L5Vbvqf7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink85").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/nodqyDUnbDg5W8e87";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink86").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/rM5QeqM7j73jVmv6A";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink87").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/aHtQ5bsaJoWuC1pb7";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink88").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/ELg55117XHW5Dy78A";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink89").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/oRgJQAyKeshT3xnFA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink90").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/AxRg4omuoERDKH5z8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink91").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/d1vi5YTLnmPh67GVA";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink92").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/zkv8HLNXD4FopFE18";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink93").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/eKCmmh7AgVrxiWZy8";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink94").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/hQAfkCQd7nc6exjS9";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink95").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/sfQj4VGTtaK8ppUm6";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink96").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/5GcVYb6zoeRRdUxw6";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink97").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/9BWpvdHmSZeMMph66";
+
+    });
+  </script>
+  <script>
+    document.getElementById("myLink98").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://forms.gle/SEEyAz9SqbbJx9768";
+
+    });
+  </script>
+  <script src="C:/xampp/htdocs/website_teknisi/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
